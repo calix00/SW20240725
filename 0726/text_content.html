@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5+CSS3 Text</title>
+    <style>
+        div {
+            height: 100vh;
+        }
+        div [name=n1], div [name=n3] {background-color: yellow;}
+        div [name=n2], div [name=n4] {background-color: brown;}
+    </style>
 </head>
 <body>
     <h1>홍차</h1>
@@ -37,10 +44,32 @@
     </table>
 
     <hr>
-    <a href="http://naver.com">네이버</a>
-    <a href="http://google.com">구글</a>
+    <p>
+        절대경로
+        <!--절대경로 링크 지정-->
+        <a href="http://naver.com">네이버</a>
+        <a href="http://google.com">구글</a>
+    </p>
+    <p>
+        상대경로<br>
+        <!--상대경로 링크 지정-->
+        <a href="n1" id="n1"></a>
+        <a href="n2" id="n1"></a>
+        <a href="n3" id="n1"></a>
+        <a href="n4" id="n1"></a> 
+    </p>
+    <p>
+        아이디경로<br>
+        <!--아이디경로 링크 지정-->
+        <a href="../0725/hello.html">hello</a>
+        <div name="n1" id="n1">N1</div>
+        <div name="n2" id="n2">N2</div>
+        <div name="n3" id="n3">N3</div>
+        <div name="n4" id="n4">N4</div>
+    </p>
 
     
+
 
 
 
